@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #E3F2FD;
+    display: grid;
+    align-items: center;
+    grid-template-rows: repeat(3, 1fr);
+    height: 100vh;
+    min-width: 320px;
+}
+
+input {
+    border: 1px solid #7bb0db;
+    border-radius: 3px;
+    color: #6e7c88;
+    font-size: 18px;
+    padding: 5px 8px;
+    outline: unset;
+}
+
+input::placeholder {
+    color: #9ca6b0;
+}
+
+input::selection {
+    background-color: #b0dbff;
+    color: #40a2f1;
+}
+
+button {
+    background-color: #2196F3;
+    border: 1px solid #2196F3;
+    border-radius: 3px;
+    color: #FAFAFA;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px 8px;
+    outline: unset;
+}
+
+button:hover {
+    background-color: #44aafd;
+}
+
+button:focus {
+    background-color: #2d8ddb;
+}
+
+#login-form {
+    background-color: #BBDEFB;
+    border: 1px solid #7bb0db;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px 0px #cecece;
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 15px 0;
+    position: relative;
+    row-gap: 10px;
+    width: 280px;
+}
+
+.form-element {
+    display: grid;
+    grid-template-columns: 1fr 30px;
+
+}
+
+.form-element input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.form-element label {
+    background-color: #eaf6ff;
+    border: 1px solid #7bb0db;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    color: #81c5fd;
+    cursor: pointer;
+    height: 33px;
+    justify-self: center;
+    line-height: 2;
+    text-align: center;
+    vertical-align: middle;
+    width: 33px;
+}
+
+#action,
+#recovery-password {
+    justify-self: strech;
+}
+
+#action button {
+    width: 100%;
+}
+
+#recovery-password {
+    justify-self: center;
+}
+
+#recovery-password a {
+    color: #2196F3;
+}
+
+#screen-details {
+    align-self: end;
+    background-color: #BBDEFB;
+    border-top: 1px solid #9fd1f9;
+    padding: 4px 0;
+    text-align: center;
+}
+
+#screen-details span {
+    color: #2196F3;
+}
+
+#info {
+    align-self: start;
+    background-color: #BBDEFB;
+    border-bottom: 1px solid #9fd1f9;
+    padding: 4px 0;
+    text-align: center;
+}
+
+#info span {
+    color: #1976D2;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 375px) {
+    #login-form input {
+        width: 220px;
+    }
+}

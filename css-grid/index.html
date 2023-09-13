@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="/css/all.min.css" media="screen" rel="stylesheet" />
+    <link href="/css/style.css" media="screen" rel="stylesheet">
+</head>
+<body>
+    <div id="info">
+        <span>Login con CSS Grid</span>
+    </div>
+    <div id="login-form">
+        <div class="form-element">
+            <input id="user" type="text" placeholder="Usuario">
+            <label for="user">
+                <i class="fa-solid fa-user"></i>
+            </label>
+        </div>
+        <div class="form-element">
+            <input id="password" type="password" placeholder="Contraseña">
+            <label for="password">
+                <i class="fa-solid fa-lock"></i>
+            </label>
+        </div>
+        <div id="action">
+            <button type="button">Ingresar</button>
+        </div>
+        <div id="recovery-password">
+            <a href="#">Recuperar contraseña</a>
+        </div>
+    </div>
+    <div id="screen-details">
+        <span></span>
+    </div>
+    <script src="/js/all.min.js"></script>
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+    <script>
+        let text = document.querySelector('#screen-details > span');
+        let minWidth = 320;
+        window.addEventListener('load', (e) => {
+            text.textContent = `${window.innerWidth} x ${window.innerHeight}`;
+        });
+        window.addEventListener('resize', (e) => {
+            text.textContent = `${e.target.innerWidth} x ${e.target.innerHeight}`;
+        });
+    </script>
+</body>
+</html>
