@@ -1,5 +1,5 @@
 ## Learning project
-This is a learning project, i'm updating my skills update writing different versions of a login form.
+This is a learning project, i'm updating my skills writing different versions of a login form.
 
 ### Warning
 This project do not accept pull requests. This is a learning documentary project, please go to another place to try earn badges and achievements. You're warned. Do not waste my time.
